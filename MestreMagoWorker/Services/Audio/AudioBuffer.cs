@@ -22,7 +22,7 @@ namespace MestreMagoWorker.Services.Audio
             return _buffer.Length >= _bytesPerSecond * _windowSeconds;
         }
 
-        public byte[] Cosnumo()
+        public byte[] Consumo()
         {
             var data = _buffer.ToArray();
             _buffer.SetLength(0);
